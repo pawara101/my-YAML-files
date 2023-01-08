@@ -5,7 +5,8 @@ metadata:
   labels:
     app: nginx
     tier: frontend
-
+## Always use two spaces instead of tabs
 spec:
   containers:
-  
+  - name: nginx
+    image: nginx # specify full path of using repo other than DockerHub
