@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+ name: myapp-pod
+ namespace: my-name-space ## define Name space to deploy
+
+ labels:
+   app: myapp
+   type: front-end
+
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx
+
