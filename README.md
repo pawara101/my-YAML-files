@@ -1,6 +1,6 @@
 # my-YAML-files with important Kubernetes commands
 
-## Replica Sets / Replication control
+## `Replica Sets / Replication control`
 
 kubectl create -f replication-controller.yaml
 kubectl delete -f replication-controller.yaml
