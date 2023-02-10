@@ -18,7 +18,11 @@
 `kubectl explain pod`
 `kubectl explain replicaset`
 
-#### can apply on running replica set
+**can apply on running replica set**
 `kubectl edit replica <replica-set-name>`  
-#### to scale up
+**to scale up**
 `kubectl scale replicaset <replica-set-name> --replicas=5`   
+
+## NameSpaces
+`kubectl get pods` **gives  pods in default namespace**
+
