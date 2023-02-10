@@ -24,8 +24,8 @@
 `kubectl scale replicaset <replica-set-name> --replicas=5`   
 
 ## NameSpaces
-`kubectl get pods` *gives  pods in default namespace*
-`kubectl get pods --namespace=kube-system` *gives pods in another namespace*
+`kubectl get pods` *gives  pods in default namespace* <br>
+`kubectl get pods --namespace=kube-system` *gives pods in another namespace* <br>
 `kubectl get pods --all-name-spaces`  *defines pods in all namespaces*
 
 *To deploy redis in another Namespace*
@@ -33,12 +33,12 @@
 
 
 ## Labels & Selectors
-`kubectl get pods --selector <label key>=<label>` *to check pods which has specific namespace*
+`kubectl get pods --selector <label key>=<label>` *to check pods which has specific namespace*<br>
 ** Example :** `kubectl get pods --selector app=App1`
 
 
 ## Taints and Tolerations
-** Taints involve in Nodes**
-**Tolerations involve with pods**
-`kubectl taint node node-name key=value:taint-effect`
+**Taints involve in Nodes**<br>
+**Tolerations involve with pods**<br>
+`kubectl taint node node-name key=value:taint-effect`<br>
 `kubectl taint node node-name app=blue:NoSchedule`
