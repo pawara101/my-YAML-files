@@ -34,7 +34,7 @@
 
 ## Labels & Selectors
 `kubectl get pods --selector <label key>=<label>` *to check pods which has specific namespace*<br>
-** Example :** `kubectl get pods --selector app=App1`
+**Example :** `kubectl get pods --selector app=App1`
 
 
 ## Taints and Tolerations
