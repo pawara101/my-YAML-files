@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+    function: load-balancer ## Can add many labels like this
+## Always use two spaces instead of tab spaces
+spec:
+  containers:
+  - name: nginx
+    image: nginx # specify full path of using repo other than DockerHub
