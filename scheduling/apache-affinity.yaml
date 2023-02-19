@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apache-deployment
+  labels:
+    app: apache
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: apache
+  template:
+    metadata:
+      labels:
+        app: apache
+    spec:
+      affinity: ## Node affinity
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: colour
+                operator: In
+                values:
+                - blue         
+      containers:
+      - name: apache
+        image: httpd
+        ports:
+        - containerPort: 80

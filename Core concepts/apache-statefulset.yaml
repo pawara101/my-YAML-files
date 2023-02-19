@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: apache-stateful-set
+  labels:
+    app: apache
+spec:
+  containers:
+  - name: apache
+    image: httpd
+    ports:
+    - containerPort: 80
