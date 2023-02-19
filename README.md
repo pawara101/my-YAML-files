@@ -7,12 +7,12 @@
 
 ## Replica Sets / Replication control
 
-`kubectl create -f replication-controller.yaml`
-`kubectl delete -f replication-controller.yaml`
-`kubectl get replicationcontroller`
+- `kubectl create -f replication-controller.yaml`
+- `kubectl delete -f replication-controller.yaml`
+- `kubectl get replicationcontroller`
 
-`kubectl create -f replica-set.yaml`
-`kubectl get replicaset`
+- `kubectl create -f replica-set.yaml`
+- `kubectl get replicaset`
 
 ### scale and update the replica set in yaml file
 `kubectl replace -f replica-set.yaml` 
