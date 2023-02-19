@@ -1,5 +1,10 @@
 # my-YAML-files with important Kubernetes commands
 
+`kubectl run --image=nginx:alpine my-nginx` Create a pod
+
+`kubectl run --image=nginx:alpine node-namepod --dry-run=client -o yaml > scheduler.yaml` Generate Yaml and write in to a file
+
+
 ## Replica Sets / Replication control
 
 `kubectl create -f replication-controller.yaml`
